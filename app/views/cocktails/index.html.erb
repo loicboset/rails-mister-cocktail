@@ -1,0 +1,30 @@
+<div class="banner"></div>
+
+<div class="container vh-100">
+  <h1 class="text-center p-5">Our Cocktails <i class="fas fa-cocktail"></i></h1>
+  <div class="cocktails_container">
+
+    <!-- ADD A COCKTAIL CARD -->
+    <%= link_to new_cocktail_path, class: "cocktail_card", id: "addACocktail"  do %>
+        <h2>Add a cocktail</h2>
+    <% end %>
+
+    <!-- DISPLAY ALL COCKTAILS -->
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail) do %>
+        <div
+        class="cocktail_card"
+        style="background-image: url('<%= cocktail.image_url %>')">
+          <div>
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <div>
+            <% cocktail.doses.each do |dose| %>
+              <p> <%= dose.description %> </p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

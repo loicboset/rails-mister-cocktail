@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Add Your Favorite Cocktail</h1>
+
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
+    <%= f.input :ingredient, collection: Ingredient.order(:name) %>
+    <%= f.submit %>
+  <% end %>
+</div>
+

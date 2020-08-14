@@ -11,3 +11,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "cocktails";
+
+h1, h2, h3, p {font-family: 'Dancing Script', cursive;}
+h1 {font-size: 80px;}

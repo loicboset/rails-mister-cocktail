@@ -1,0 +1,43 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+  height: 100vh;
+  // background-image: url('https://image.freepik.com/free-vector/cocktail-collection-flat-design_23-2148595274.jpg');
+  background-image: url('https://media.giphy.com/media/3o7TKDhgKC52OZhV0k/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2999AB;
+  background-position: top;
+}
+
+.cocktails_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cocktail_card {
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+  width: 30%;
+  height: 550px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  h2 {
+    padding: 10px;
+    color: #2999AB;
+    font-size: 40px;
+  }
+  p {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+
+#addACocktail {
+  background-image: url("https://image.freepik.com/free-vector/tropical-coconut-palm-tree-illustration_53876-58990.jpg");
+}
