@@ -11,20 +11,22 @@
 
     <!-- DISPLAY ALL COCKTAILS -->
     <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail) do %>
-        <div
-        class="cocktail_card"
-        style="background-image: url('<%= cocktail.image_url %>')">
-          <div>
+      <div
+      class="cocktail_card"
+      style="background-image: url('<%= cocktail.image_url %>')">
+        <div>
+          <%= link_to cocktail_path(cocktail) do %>
             <h2><%= cocktail.name %></h2>
-          </div>
-          <div>
-            <% cocktail.doses.each do |dose| %>
-              <p> <%= dose.description %> </p>
-            <% end %>
-          </div>
+          <% end %>
         </div>
-      <% end %>
+        <div>
+          <% cocktail.doses.each do |dose| %>
+            <p> <%= dose.description %> </p>
+          <% end %>
+        </div>
+      </div>
     <% end %>
+
+
   </div>
 </div>
