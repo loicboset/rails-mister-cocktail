@@ -13,5 +13,10 @@
 @import "pages/index";
 @import "cocktails";
 
+// SELECT2
+@import "select2";
+@import "select2-bootstrap";
+@import "select2/dist/css/select2";
+
 h1, h2, h3, p {font-family: 'Dancing Script', cursive;}
 h1 {font-size: 80px;}
